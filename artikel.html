@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Jurnalisme Data</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <base href="https://www.jurnalisme-data.com/" />
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet" />
+
+    <style>
+      .teks-justify p {
+        text-align: justify;
+        font-size: 16px;
+        margin: 24px;
+      }
+    </style>
+
+    <style>
+      .teks-Center {
+        text-align: center;
+        font-size: 20px;
+        margin: 24px;
+      }
+    </style>
+
+    <style>
+      .text-gold {
+        color: #735d14 !important;
+      }
+    </style>
+
+    <style>
+      .gambar-seragam {
+        width: 60%;
+        max-height: 60%;
+        object-fit: cover;
+        border-radius: 8px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      }
+    </style>
+
+    <style>
+      .custom-padding1 {
+        padding: 20px;
+      }
+    </style>
+
+    <style>
+      .custom-title1 {
+        padding-top: 60px;
+        padding-bottom: 20px;
+      }
+    </style>
+  </head>
+
+  <body class="index-page">
+    <header id="header" class="header d-flex align-items-center fixed-top">
+      <div
+        class="container position-relative d-flex align-items-center justify-content-between"
+      >
+        <a href="/" class="logo d-flex align-items-center me-auto me-xl-0">
+          <img src="assets/img/logo-usu.webp" alt="logo USU" />
+          <h1 class="sitename">Jurnalisme Data</h1>
+          <span>.</span>
+        </a>
+
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="/" class="active">Home</a></li>
+            <li class="dropdown">
+              <a href="/#project"
+                ><span>Project Kami</span
+                ><i class="bi bi-chevron-down toggle-dropdown"></i
+              ></a>
+              <ul>
+                <li><a href="modul.html">Modul Pembelajaran</a></li>
+                <li><a href="video.html">Video Pembelajaran</a></li>
+                <li><a href="artikel.html">Artikel Mahasiswa</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a
+                ><span>Tentang Kami</span
+                ><i class="bi bi-chevron-down toggle-dropdown"></i
+              ></a>
+              <ul>
+                <li><a href="/#about">Jurnalisme Data</a></li>
+                <li><a href="/#mataKuliah">Mata Kuliah Jurnalisme Data</a></li>
+                <li><a href="/#tujuan">Tujuan Mata Kuliah</a></li>
+                <li><a href="/#dosen">Dosen Pengasuh</a></li>
+              </ul>
+            </li>
+            <li><a href="#contact">Kontak</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="page-title"></div>
+
+      <section id="testimonials" class="testimonials custom-title1">
+        <div class="text-center d-block mb-4" data-aos="fade-up">
+          <h2>Artikel Terbaru</h2>
+        </div>
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="testimonials-slider swiper init-swiper">
+            <script type="application/json" class="swiper-config">
+              {
+                "loop": true,
+                "speed": 800,
+                "autoplay": {
+                  "delay": 5000
+                },
+                "slidesPerView": 1,
+                "spaceBetween": 30,
+                "pagination": {
+                  "el": ".swiper-pagination",
+                  "type": "bullets",
+                  "clickable": true
+                },
+                "breakpoints": {
+                  "768": {
+                    "slidesPerView": 2
+                  },
+                  "1200": {
+                    "slidesPerView": 3
+                  }
+                }
+              }
+            </script>
+            <div class="swiper-wrapper" id="artikel-wrapper"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="portfolio-details" class="portfolio-details custom-padding1">
+        <div class="container" data-aos="fade-up">
+          <div class="row justify-content-between gy-4 mt-4">
+            <div class="text-center d-block mb-4">
+              <h2>Selamat Datang di Galeri Artikel Jurnalisme Data</h2>
+            </div>
+            <div class="col-lg-12" data-aos="fade-up">
+              <div class="portfolio-description">
+                <p>
+                  Halaman ini menyajikan kumpulan karya tulis mahasiswa yang
+                  mengeksplorasi berbagai isu melalui pendekatan jurnalisme
+                  data. Setiap artikel disusun dengan tujuan menghadirkan
+                  informasi berbasis data yang akurat, relevan, dan mudah
+                  dipahami publik. Melalui tugas ini, mahasiswa tidak hanya
+                  mengasah kemampuan menulis jurnalistik, tetapi juga
+                  mengembangkan kepekaan terhadap fakta, visualisasi data, dan
+                  etika dalam penyajian informasi.
+                </p>
+                <p>
+                  Silakan telusuri daftar artikel di bawah ini untuk melihat
+                  bagaimana data dapat menjadi alat penting dalam membongkar
+                  realitas sosial dan memperkuat fungsi kontrol media dalam
+                  masyarakat demokratis.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="portfolio" class="portfolio custom-padding1">
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div
+            class="isotope-layout"
+            data-default-filter="*"
+            data-layout="masonry"
+            data-sort="original-order"
+          >
+            <div
+              class="row g-4 isotope-container"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <div
+                class="col-lg-6 col-md-6 portfolio-item isotope-item filter-web"
+              >
+                <div class="portfolio-card">
+                  <div class="portfolio-image">
+                    <img
+                      src="assets/img/illustration/artikel-2024.jpg"
+                      class="img-fluid"
+                      alt=""
+                      loading="lazy"
+                    />
+                    <div class="portfolio-overlay">
+                      <div class="portfolio-actions">
+                        <a href="artikel-2024/" class="details-link"
+                          ><i class="bi bi-arrow-right"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="portfolio-content">
+                    <span class="category">Artikel</span>
+                    <h3><a href="artikel-2024/">Mahasiswa tahun 2024</a></h3>
+                    <p>
+                      Kumpulan artikel 2024 yang menyuarakan isu-isu sosial
+                      melalui jurnalisme data. Tulisannya tajam, berbasis fakta,
+                      dan mencerminkan kepedulian terhadap perubahan masyarakat.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="col-lg-6 col-md-6 portfolio-item isotope-item filter-graphics"
+              >
+                <div class="portfolio-card">
+                  <div class="portfolio-image">
+                    <img
+                      src="assets/img/illustration/artikel-2025.jpg"
+                      class="img-fluid"
+                      alt=""
+                      loading="lazy"
+                    />
+                    <div class="portfolio-overlay">
+                      <div class="portfolio-actions">
+                        <a href="artikel-2025/" class="details-link"
+                          ><i class="bi bi-arrow-right"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="portfolio-content">
+                    <span class="category">Artikel</span>
+                    <h3><a href="artikel-2025/">Mahasiswa Tahun 2025</a></h3>
+                    <p>
+                      Artikel 2025 mengangkat isu kontemporer dengan pendekatan
+                      jurnalisme data. Setiap karya merefleksikan kepedulian,
+                      analisis kritis, dan semangat generasi muda dalam membaca
+                      realitas sosial secara mendalam.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer" class="footer light-background">
+      <div class="container footer-top">
+        <div class="row gy-4">
+          <div class="col-lg-4 col-md-4 footer-about">
+            <a href="/" class="logo d-flex align-items-center">
+              <span class="sitename">Jurnalisme Data</span>
+            </a>
+            <div class="footer-contact pt-3">
+              <div
+                style="display: flex; align-items: center; margin-bottom: 20px"
+              >
+                <img
+                  src="assets/img/logo-usu.webp"
+                  alt="Logo USU"
+                  style="height: 40px; margin-right: 10px"
+                />
+                <span style="font-size: 1.2rem; font-weight: bold"
+                  >Universitas Sumatera Utara</span
+                >
+              </div>
+              <p>PROGRAM SARJANA ILMU KOMUNIKASI</p>
+              <p>
+                Jl. Dr. A. Sofian No. 1A, Padang Bulan,<br />
+                Kec. Medan Baru, Sumatera Utara, Indonesia
+              </p>
+              <p class="mt-3">
+                <strong>Phone:</strong> <span>(061) 8211965</span>
+              </p>
+              <p><strong>Email:</strong> <span>fisip@usu.ac.id</span></p>
+            </div>
+            <div class="social-links d-flex mt-4 gap-3">
+              <a href="https://www.youtube.com/channel/UCxhQ5ggRByzi9oYhppmRwhQ"
+                ><i class="bi bi-youtube"></i
+              ></a>
+              <a href="https://www.facebook.com/kampusfisipusu.medan"
+                ><i class="bi bi-facebook"></i
+              ></a>
+              <a href="https://www.instagram.com/fisip.usu/?hl=en"
+                ><i class="bi bi-instagram"></i
+              ></a>
+              <a
+                href="https://mail.google.com/mail/u/0/?tf=cm&fs=1&to=farida.hanim@usu.ac.id"
+                ><i class="bi bi-envelope-at"></i
+              ></a>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-4 col-md-4 footer-links text-center d-flex flex-column align-items-center">
+            <h4>Useful Links</h4>
+            <ul class="list-unstyled d-flex flex-column align-items-center">
+              <li><a href="/" class="text-decoration-none">Home</a></li>
+              <li>
+                <a href="/#about" class="text-decoration-none">Tentang Kami</a>
+              </li>
+              <li><a href="#" class="text-decoration-none">Kontak</a></li>
+              <li>
+                <a href="#" class="text-decoration-none">Kebijakan Privasi</a>
+              </li>
+            </ul>
+          </div>
+
+          <div
+            class="col-lg-4 col-md-4 footer-links text-center d-flex flex-column align-items-center"
+          >
+            <h4>Our Project</h4>
+            <ul class="list-unstyled d-flex flex-column align-items-center">
+              <li>
+                <a href="modul.html" class="text-decoration-none"
+                  >Modul Pembelajaran</a
+                >
+              </li>
+              <li>
+                <a href="video.html" class="text-decoration-none"
+                  >Video Pembelajaran</a
+                >
+              </li>
+              <li>
+                <a href="artikel.html" class="text-decoration-none">Artikel</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="container copyright text-center mt-4">
+        <p>
+          © 2025 <span>Copyright</span>
+          <strong class="px-1 sitename">Jurnalisme-Data</strong>
+          <span>All Rights Reserved</span>
+        </p>
+      </div>
+    </footer>
+
+    <a
+      href="#"
+      id="scroll-top"
+      class="scroll-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <div id="preloader"></div>
+
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="artikel-2025/js/slider.js"></script>
+  </body>
+</html>
