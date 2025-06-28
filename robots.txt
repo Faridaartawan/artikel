@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /drafts/
+Disallow: /private/
+Allow: /artikel-2024/
+Allow: /artikel-2025/
+Allow: /
+
+Sitemap: https://artikel.jurnalisme-data.com/sitemap.xml
